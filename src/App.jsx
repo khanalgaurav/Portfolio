@@ -1,17 +1,15 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
+import { BrowserRouter, Route, Routes } from "react-router";
+
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
-      <div className="mx-20">
-        <div className="h-screen">
-          <Navbar />
-          <Hero />
-        </div>
-        <Portfolio />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

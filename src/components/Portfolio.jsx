@@ -6,17 +6,18 @@ import { FiExternalLink } from "react-icons/fi";
 import { SiDjango, SiExpress, SiMongodb } from "react-icons/si";
 import dashboard from "../assets/Images/Projects/dashboard.png";
 import fiscord from "../assets/Images/Projects/fiscordhome.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="p-5 w-[90rem]">
         <div className="mb-10">
-          <h1 className="text-4xl font-bold">Portfolio</h1>
+          <h1 className="text-xl font-bold text-blue-500">Portfolio</h1>
           <h1 className="text-2xl font-bold ">Personal Projects</h1>
         </div>
         {/* project no 1 */}
-        <div className="flex justify-between items-center gap-5 mb-16">
+        <div className="flex justify-between items-center gap-5 mb-24">
           <div>
             <img
               className="w-[100rem] rounded-3xl border-2 border-black"
@@ -42,19 +43,23 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="flex gap-5">
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                <FaGithub />
-                Source Code
-              </div>
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                Live Demo
-                <FiExternalLink />
-              </div>
+              <Link to="https://github.com/khanalgaurav/Shopie">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  <FaGithub />
+                  Source Code
+                </div>
+              </Link>
+              <Link to="https://shopiestore.netlify.app/">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  Live Demo
+                  <FiExternalLink />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
         {/* project no 2 */}
-        <div className="flex justify-between items-center gap-5 mb-16">
+        <div className="flex justify-between items-center gap-5 mb-24">
           <div className="flex flex-col items-center text-center">
             <h1 className="font-bold text-xl">
               Nepali Sign Language Detection
@@ -78,14 +83,18 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="flex gap-5">
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                <FaGithub />
-                Source Code
-              </div>
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                Live Demo
-                <FiExternalLink />
-              </div>
+              <Link to="https://github.com/khanalgaurav/Shanketik-Bhasa">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  <FaGithub />
+                  Source Code
+                </div>
+              </Link>
+              <Link to="#">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  Live Demo
+                  <FiExternalLink />
+                </div>
+              </Link>
             </div>
           </div>
           <div>
@@ -97,7 +106,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* project no 3 */}
-        <div className="flex justify-between items-center gap-5 mb-16">
+        <div className="flex justify-between items-center gap-5 mb-36">
           <div>
             <img
               className="w-[100rem] rounded-3xl border-2 border-black"
@@ -131,14 +140,18 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="flex gap-5">
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                <FaGithub />
-                Source Code
-              </div>
-              <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
-                Live Demo
-                <FiExternalLink />
-              </div>
+              <Link to="https://github.com/khanalgaurav/Chat">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  <FaGithub />
+                  Source Code
+                </div>
+              </Link>
+              <Link to="#">
+                <div className="flex gap-1 font-bold items-center border border-black px-2 py-1 rounded-lg">
+                  Live Demo
+                  <FiExternalLink />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
