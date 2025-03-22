@@ -6,7 +6,7 @@
   initial-value: 0;
   inherits: false;
 }
-.animation::after,
+
 .animation::before {
   content: " ";
   display: block;
@@ -40,9 +40,3 @@
     --angle: 360deg;
   }
 }
-
-/* #ff4545,
-#00ff99,
-#006aff,
-#ff0095,
-#ff4545 */

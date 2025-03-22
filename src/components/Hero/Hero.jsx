@@ -46,6 +46,7 @@ const Hero = () => {
                 className="object-cover rounded-full h-72 w-72"
                 src={gaurav}
                 alt="Profile picture"
+                loading="lazy"
               />
             </div>
           </div>
