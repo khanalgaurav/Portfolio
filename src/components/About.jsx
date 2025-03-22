@@ -3,8 +3,8 @@ import image from "../assets/Images/frontenddeveloper.jpg";
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center mb-40 mt-10 text-center md:text-left">
-      <div className="flex flex-col md:flex-row md:w-3/4 justify-center items-center gap-8">
-        <div className="w-1/2">
+      <div className="flex flex-col md:flex-row md:w-3/4 justify-center items-center gap-8 px-5">
+        <div className="md:w-1/2">
           <img className="rounded-4xl" src={image} alt="About me image" />
         </div>
         <div className="md:w-1/2">

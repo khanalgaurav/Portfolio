@@ -14,7 +14,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div
-      className={`flex justify-center items-center h-[93%] bg-cover bg-[url(${gaurav})] bg-center`}
+      className={`flex justify-center items-center h-[80%] bg-cover bg-[url(${gaurav})] bg-center`}
     >
       <div className="">
         <div className="flex flex-col md:flex-row md:items-center text-lg md:w-[60rem]">
