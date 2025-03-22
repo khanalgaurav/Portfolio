@@ -8,7 +8,7 @@ import Portfolio from "./Portfolio";
 const Home = () => {
   return (
     <>
-      <div className="mx-20">
+      <div className="md:mx-20">
         <div className="h-screen">
           <Navbar />
           <Hero />

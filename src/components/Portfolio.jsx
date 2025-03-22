@@ -11,16 +11,16 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="p-5 w-[90rem]">
-        <div className="mb-10">
+      <div className="p-5 md:w-[90rem] w-full">
+        <div className="mb-10 text-center md:text-left">
           <h1 className="text-xl font-bold text-blue-500">Portfolio</h1>
           <h1 className="text-2xl font-bold ">Personal Projects</h1>
         </div>
         {/* project no 1 */}
-        <div className="flex justify-between items-center gap-5 mb-24">
+        <div className="flex md:flex-row flex-col justify-between items-center gap-5 mb-24 ">
           <div>
             <img
-              className="w-[100rem] rounded-3xl border-2 border-black"
+              className="md:w-[100rem] w-[20rem] rounded-3xl border-2 border-black"
               src={homepage}
               alt="Project image"
             />
@@ -59,7 +59,14 @@ const Portfolio = () => {
           </div>
         </div>
         {/* project no 2 */}
-        <div className="flex justify-between items-center gap-5 mb-24">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5 mb-24">
+          <div className="block md:hidden">
+            <img
+              className="w-[100rem] rounded-3xl border-2 border-black"
+              src={dashboard}
+              alt="Project image"
+            />
+          </div>
           <div className="flex flex-col items-center text-center">
             <h1 className="font-bold text-xl">
               Nepali Sign Language Detection
@@ -97,7 +104,7 @@ const Portfolio = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="md:block hidden">
             <img
               className="w-[100rem] rounded-3xl border-2 border-black"
               src={dashboard}
@@ -106,7 +113,7 @@ const Portfolio = () => {
           </div>
         </div>
         {/* project no 3 */}
-        <div className="flex justify-between items-center gap-5 mb-36">
+        <div className="flex flex-col md:flex-row   justify-between items-center gap-5 mb-36">
           <div>
             <img
               className="w-[100rem] rounded-3xl border-2 border-black"
@@ -122,20 +129,20 @@ const Portfolio = () => {
               communication powered by Socket.io and a responsive interface
               designed for smooth user interactions across devices.
             </p>
-            <div className="flex gap-5 mb-5">
-              <p className="flex gap-1 font-bold items-center">
+            <div className="flex flex-wrap justify-center gap-3 mb-5">
+              <p className="flex gap-4 text-base font-bold items-center">
                 Mongodb <SiMongodb className="text-lg" />
               </p>
-              <p className="flex gap-1 font-bold items-center">
+              <p className="flex gap-4 text-base font-bold items-center">
                 Express <SiExpress className="text-lg" />
               </p>
-              <p className="flex gap-1 font-bold items-center">
+              <p className="flex gap-4 text-base font-bold items-center">
                 React <FaReact className="text-lg" />
               </p>
-              <p className="flex gap-1 font-bold items-center">
+              <p className="flex gap-4 text-base font-bold items-center">
                 Node <FaNode className="text-lg" />
               </p>
-              <p className="flex gap-1 font-bold items-center">
+              <p className="flex gap-4 text-base font-bold items-center">
                 Tailwind <RiTailwindCssFill className="text-lg" />
               </p>
             </div>
