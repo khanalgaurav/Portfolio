@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center font-bold text-xl py-5 px-2 md:px-0">
-        <h1>Gaurav</h1>
+        <h1 className="text-3xl md:text-2xl">Gaurav</h1>
         <BiMenu
           onClick={() => {
             setShowMenu(!showMenu);
